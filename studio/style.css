@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.kep1 {
+    display: flex;
+    justify-content: left;
+    width: auto;
+
+}
+
+.kep1 img {
+    height: 679px;
+    top: 124px;
+    left: -18px;
+    width: 100%;
+}
+
+/* Navbar innet */
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #B50014;
+    width: 100%;
+    padding: 10px;
+
+}
+.logo-item{
+    position: absolute;
+    
+}
+.topnav {
+    background-color: #B50014;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0; 
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a.active {
+    font-weight: bold;
+}
+
+.bottomnav {
+    background-color: #252525;
+    color: #f2f2f2;
+}
+
+
+/* Navbar eddig */

@@ -41,6 +41,8 @@
     padding: 35px 0 30px 0;
     position: relative;
     flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
 
 }
 
@@ -96,7 +98,7 @@
 }
 
 .ftext p {
-    font-weight: 300;
+    font-weight: 100;
     line-height: 24px;
 }
 
@@ -116,13 +118,17 @@
     display: flex;
     background-color: #000;
     width: 100%;
-    height: 712px;
+    height: fit-content;
+    justify-content: center;
+    padding: 0 0 90px 0;
+    flex-wrap: wrap-reverse;
+
 }
 
 .drytext {
-    flex: 1;
     color: #fff;
-    padding: 0 0 0 0;
+    max-width: 540px;
+    max-height: fit-content;
 }
 
 .drytext h2 {
@@ -131,8 +137,9 @@
 }
 
 .drytext p {
-    padding: 41px 125px 0 0;
-    font-weight: 300;
+    padding: 41px 0 0 0;
+    font-weight: 100;
+    margin-right: 125px;
 }
 
 .buttons {
@@ -140,22 +147,9 @@
     flex-direction: row;
 }
 
-.redbutton {
-    background-color: #ff0000;
-    border: solid 1px;
-    border-color: #fff;
-    color: white;
-    text-align: center;
-    border-radius: 40px;
-    width: 174px;
-    height: 47px;
-    margin-top: 66px;
-    margin-right: 16px;
-
-}
-
 .drypic {
-    flex: 1;
+    max-width: 540px;
+    max-height: fit-content;
 }
 
 .drybigpic {
@@ -181,23 +175,29 @@
     object-position: center;
 }
 
+
 /*Dry aged vege*/
 
 /*Grillcurse*/
 .grilltextcontainer {
-    flex: 1;
+    width: 50%;
     background-color: #A62120;
 }
-.grilltext{
+
+.grilltext {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #fff;
     padding-top: 128px;
-    line-height: 24px;
-    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 36px;
+    padding-bottom: 85px;
 }
-.grilltext h2{
+
+.grilltext h2 {
     font-size: 32px;
     padding-bottom: 29px;
     font-weight: 700;
@@ -210,18 +210,71 @@
 .grillcurse {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 
 .grillpic {
-    flex: 1;
-    background-image: url("img/grill.jpg");
-    width: 100%;
-    height: 642px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
+    width: 50%;
+    object-position: center;
+    object-fit: cover;
 }
 
-
 /*Grillcurse vege*/
+/*Buttons*/
+
+.redbutton {
+    background-color: #ff0000;
+    border: solid 1px;
+    border-color: #fff;
+    color: white;
+    align-items: center;
+    border-radius: 40px;
+    width: 174px;
+    height: 47px;
+    margin-top: 66px;
+    margin-right: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.whitebutton {
+    border-radius: 40px;
+    border: 1px solid #F00;
+    background: #FFF;
+    color: #000;
+    font-weight: 400;
+    align-items: center;
+    border-radius: 40px;
+    width: 174px;
+    height: 47px;
+    margin-top: 66px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+}
+.hiddenftext{
+    display: none;
+}
+@media screen and (max-width:1080px){
+    .grillcurse{
+        flex-direction: column;
+    }
+    .grilltextcontainer{
+        width: 100%;
+    }
+    .grillpic{
+        width: 100%;
+    }
+    .mainpic{
+        width: 100%;
+    }
+    .ftext{
+        position:unset;
+    }
+    .hiddenftext{
+        display: flex;
+        color: #fff;
+    }
+}

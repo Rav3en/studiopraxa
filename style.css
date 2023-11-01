@@ -13,9 +13,6 @@
 
 }
 
-.menu li>.logo-item {
-    margin: 0;
-}
 
 .logo-item {
     position: absolute;
@@ -150,19 +147,22 @@
 .drypic {
     max-width: 540px;
     max-height: fit-content;
+    overflow: hidden;
 }
 
 .drybigpic {
-    width: 537px;
-    height: 326px;
+    max-width: 100%;
+    height: auto;
     padding: 114px 5px 15px 4px;
     object-fit: cover;
     object-position: center;
+
 }
 
 .drypiccontainer {
     width: 537px;
     height: 167px;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -221,6 +221,75 @@
 }
 
 /*Grillcurse vege*/
+
+/*Handwerk*/
+.handwerkcontainer {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.handtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 82px;
+
+}
+
+.handtext h2 {
+    padding: 119px 0 16px 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 81.25% */
+}
+
+.p2 {
+    padding: 0 0 65px 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.handtext p {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+
+}
+.handpics{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 46px 0 227px 0;
+    overflow: hidden;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    flex-wrap: wrap;
+}
+.handpics img{
+    width: 262px;
+    height: 243px;
+}
+.handline{
+    width: 50%;
+}
+
+/*Handwerk vege*/
 /*Buttons*/
 
 .redbutton {
@@ -234,6 +303,21 @@
     height: 47px;
     margin-top: 66px;
     margin-right: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.redbutton2 {
+    background-color: #ff0000;
+    border: solid 1px;
+    border-color: #fff;
+    color: white;
+    align-items: center;
+    border-radius: 40px;
+    width: 174px;
+    height: 47px;
+    margin-top: 35px;
     font-weight: 400;
     display: flex;
     justify-content: center;
@@ -254,27 +338,104 @@
     display: flex;
     justify-content: center;
 }
-.hiddenftext{
+
+.hiddenftext {
     display: none;
 }
-@media screen and (max-width:1080px){
-    .grillcurse{
+
+
+@media screen and (max-width:1080px) {
+    .grillcurse {
         flex-direction: column;
     }
-    .grilltextcontainer{
+
+    .grilltextcontainer {
         width: 100%;
     }
-    .grillpic{
+
+    .grillpic {
         width: 100%;
     }
-    .mainpic{
+
+    .mainpic {
         width: 100%;
     }
-    .ftext{
-        position:unset;
+
+    .ftext {
+        display: none;
     }
-    .hiddenftext{
+
+    .dryaged {
+        width: 100%;
+    }
+
+    .drytext {
+        width: 100%;
         display: flex;
-        color: #fff;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 35px 0 35px;
     }
+
+    .drybigpic {
+        padding: 0 5px 15px 4px;
+        width: 100%;
+    }
+
+    .hiddenftext {
+        display: flex;
+        padding: 15px 15px 15px 15px;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .hiddenftext h1 {
+        color: #FFF;
+        text-align: center;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .hiddenftext p {
+        padding: 15px 150px 0 150px;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    .dryaged h2 {
+        padding-top: 13px;
+    }
+
+    .dryaged p {
+        margin-top: 33px;
+        padding: 0 0 0 0;
+        margin-right: 0px;
+    }
+
+    .dryaged {
+        text-align: center;
+    }
+    .handpics{
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .handpics img{
+
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .menu {}
 }

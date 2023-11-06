@@ -66,7 +66,8 @@
     align-items: center;
     gap: 5px;
 }
-.downloadhide{
+
+.burger {
     display: none;
 }
 
@@ -144,6 +145,8 @@
 .buttons {
     display: flex;
     flex-direction: row;
+    gap:15px;
+
 }
 
 .drypic {
@@ -162,8 +165,8 @@
 }
 
 .drypiccontainer {
-    width: 537px;
-    height: 167px;
+    width: 75%;
+    height: fit-content;
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -171,8 +174,8 @@
 }
 
 .drypiccontainer img {
-    width: 167px;
-    height: 167px;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     object-position: center;
 }
@@ -203,8 +206,7 @@
     font-size: 32px;
     padding-bottom: 29px;
     font-weight: 700;
-    width: 231px;
-    height: 92px;
+    width: 30%;
     line-height: 42px;
 }
 
@@ -249,17 +251,14 @@
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
-    /* 81.25% */
 }
 
-.p2 {
-    padding: 0 0 65px 0;
+.handtext h3 {
+    padding-bottom:65px;
     color: #FFF;
     text-align: center;
     font-size: 22px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .handtext p {
@@ -279,7 +278,7 @@
     gap: 15px;
     padding: 46px 0 227px 0;
     justify-content: center;
-    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .handpics img {
@@ -290,19 +289,21 @@
 .handline {
     width: 72px;
     height: 72px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     z-index: 99;
     background-color: #000;
     padding: 7px;
-    
+
 }
-.handwerkcontainer hr{
+
+.handwerkcontainer hr {
     width: 50%;
     border: 1px solid #535353;
     position: absolute;
     top: 0;
 }
-.hrcointainer{
+
+.hrcointainer {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -339,6 +340,7 @@
     text-align: left;
     padding-left: 124px;
 }
+
 .customtext h3 {
     font-size: 22px;
     font-weight: 700;
@@ -350,6 +352,7 @@
     width: 50%;
 
 }
+
 .customtext p {
     font-size: 16px;
     font-weight: 300;
@@ -363,56 +366,165 @@
 /*Custom vege*/
 
 /*Fleish*/
-.fleish{
+.fleish {
     height: 540px;
     background-color: #000;
     position: relative;
 }
-.fleishtext{
+
+.fleishtext {
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.fleish img{
+
+.fleish img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 /*Fleish vege*/
+/*Genuss*/
+.genusscontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    border: solid 1px;
+    border-color: #000;
+    height: fit-content;
+    max-height: 455px;
+
+    padding: 127px 0 127px 0;
+
+}
+
+.genusspic img {
+    width: 100%;
+}
+
+.genusspic {}
+
+.genusstext {
+    color: #fff;
+    min-width: 400px;
+    width: fit-content;
+}
+
+.genusstext h2 {
+    width: 60%;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.lentihr hr {
+    width: 50%;
+    border: 1px solid #535353;
+    position: absolute;
+    top: 0;
+}
+
+.lentihr {
+    background-color: #000;
+    border: solid 1px;
+    border-color: #000;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    background-color: #000;
+    color: #fff;
+    padding: 150px 0 136px 0;
+}
+
+.badges h2 {
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.badge-item p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.badge-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+
+.badge-item p {
+    width: 75%;
+}
+
+/*Genuss vege*/
 
 /*Buttons*/
 
 .redbutton {
-    background-color: #ff0000;
+    background-color: #A62120;
     border: solid 1px;
     border-color: #fff;
     color: white;
     align-items: center;
     border-radius: 40px;
-    width: 174px;
-    height: 47px;
     margin-top: 66px;
-    margin-right: 16px;
+    padding: 12px 40px 13px 40px;
     font-weight: 400;
     display: flex;
     justify-content: center;
 }
 
 .redbutton2 {
-    background-color: #ff0000;
+    background-color: #A62120;
     border: solid 1px;
     border-color: #fff;
     color: white;
     align-items: center;
     border-radius: 40px;
-    width: 174px;
-    height: 47px;
+    padding: 12px 40px 13px 40px;
     margin-top: 35px;
     font-weight: 400;
     display: flex;
     justify-content: center;
+}
+
+.redbutton3 {
+    background-color: #A62120;
+    border: solid 1px;
+    border-color: #fff;
+    color: white;
+    align-items: center;
+    border-radius: 40px;
+    margin-top: 35px;
+    font-weight: 400;
+    display: flex;
+    padding: 12px 40px 13px 40px;
+    justify-content: center;
+    width: 33%;
 }
 
 .whitebutton {
@@ -423,13 +535,12 @@
     font-weight: 400;
     align-items: center;
     border-radius: 40px;
-    width: 174px;
-    height: 47px;
-    margin-top: 66px;
-    margin-right: 16px;
+    padding: 12px 58px 13px 58px;
     display: flex;
     justify-content: center;
+    line-height: 1;
 }
+
 .whitebutton2 {
     border-radius: 40px;
     border: 1px solid #F00;
@@ -438,8 +549,7 @@
     font-weight: 400;
     align-items: center;
     border-radius: 40px;
-    width: 174px;
-    height: 47px;
+    padding: 12px 40px 13px 40px;
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -452,6 +562,14 @@
 
 
 @media screen and (max-width:1080px) {
+    .handtext{
+        width: 80%;
+        padding-top: 62px;
+    }
+    .handtext h2{
+        padding: 0;
+        padding-bottom: 16px;
+    }
     .grillcurse {
         flex-direction: column;
     }
@@ -477,25 +595,32 @@
     }
 
     .drytext {
-        width: 100%;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0 35px 0 35px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .drybigpic {
-        padding: 0 5px 15px 4px;
+        padding: 15px;
         width: 100%;
+    }
+
+    .drypiccontainer {
+        width: 100%;
+    }
+
+    .drypiccontainer img {
+        height: 80%;
     }
 
     .hiddenftext {
         display: flex;
-        padding: 15px 15px 15px 15px;
+        padding: 15px 18px 10px 20px;
         color: #fff;
         flex-direction: column;
         justify-content: center;
-        width: 50%;
+        width: 80%;
+
     }
 
     .hiddenftext h1 {
@@ -508,13 +633,13 @@
     }
 
     .hiddenftext p {
-        padding: 15px 150px 0 150px;
         color: #FFF;
         text-align: center;
         font-size: 16px;
         font-style: normal;
         font-weight: 300;
         line-height: 24px;
+
     }
 
     .dryaged h2 {
@@ -523,7 +648,7 @@
 
     .dryaged p {
         margin-top: 33px;
-        padding: 0 0 0 0;
+        padding: 0;
         margin-right: 0px;
     }
 
@@ -537,61 +662,223 @@
         width: 90%;
         padding: 46px 0 227px 0;
         justify-content: center;
-        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .handpics img {
         width: 100%;
         height: auto;
     }
+
     .customecontainer {
         display: flex;
         flex-direction: column-reverse;
         height: fit-content;
         width: 100%;
     }
-    .customtext{
+
+    .customtext {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .customimg{
+
+    .customimg {
         width: 100%;
         max-height: 320px;
     }
-    .customtext h2{
+
+    .customtext h2 {
         padding: 37px 70px 0 70px;
         width: 100%;
     }
-    .customtext h3{
+
+    .customtext h3 {
         padding: 20px 55px 0 55px;
         width: 100%;
     }
-    .customtext p{
+
+    .customtext p {
         padding: 20px 0 30px 0;
-        width: 90%;    
+        width: 90%;
     }
-    .buttons{
-        flex-direction: column;
-    }
-    .hrcointainer hr{
+
+
+
+    .hrcointainer hr {
         width: 100%;
     }
-    .downloadhide{
+
+    .burger {
         display: flex;
+        width: 100%;
     }
+
     .menu {
         display: none;
     }
-    .logo-item{
+
+    .logo-item {
         display: flex;
     }
-    .header-container{
-        
+
+    .header-container {
+        width: 100%;
+    }
+
+    .menubar {
+
+        height: fit-content;
+        padding: 20px 30px 22px 23px;
+    }
+
+    .logo-item-Burger {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
+
+    .burger-downld {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .burger-downld a img {
+        width: 100%;
+        height: 50px;
+    }
+
+    .burger-downld a {
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transform: translateY(5px);
+        font-weight: 700;
+        color: #FFF;
+    }
+
+    .drypic {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .grilltext h2{
+        text-align: center;
+        padding-bottom: 66px;
+    }
+    .grilltext{
+        padding-top: 75px;
+        text-align: center;
+        list-style-position: inside;
+    }
+    .grilltext ul{
+        padding: 0;
+    }
+    .whitebutton{
+        margin-top: 50px;
+    }
+
+    .topnav {
+        width: 100%;
     }
 }
 
 @media screen and (max-width:800px) {
-    
+    .logo-item-Burger {}
+}
+
+@media screen and (max-width:700px) {
+    .drybigpic {
+        padding-right: 15px;
+        width: 100%;
+    }
+
+    .drypiccontainer {
+        width: 80%;
+        gap: 5px;
+    }
+
+    .drybigpic img {
+        width: 80%;
+    }
+
+    .hiddenftext {
+        padding: 15px 18px 0 18px;
+        width: 100%;
+    }
+
+    .dryaged p {
+        margin: 0;
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width:743px)
+{
+    .grilltext h2 {
+        width: 40%;
+        padding-bottom: 66px;
+    }
+}
+@media  screen and (max-width:558px) {
+    .grilltext h2 {
+        width: 50%;
+        padding-bottom: 66px;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .drytext{
+        padding: 0 30px 0 30px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .drybigpic {
+        width: 100%;
+    }
+
+    .drypiccontainer {
+        width: 80%;
+        height: 24%;
+    }
+
+    .drybigpic img {
+        width: 66%;
+        height: 290px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .drypic {
+        width: 100%;
+    }
+
+    .drytext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 33px 0 33px;
+    }
+    .drytext p{
+        padding-top: 33px;
+    }
+    .drytext h2{
+        padding-bottom: 3px;
+    }
+
+    .grilltext ul{
+        padding: 0;
+        padding-bottom: 50px;   
+    }
+    .grilltext{
+        text-align: center;
+        list-style-position: inside;
+    }
 }
